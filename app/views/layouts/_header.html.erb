@@ -8,13 +8,18 @@
       <div>
         <div>
           <ul>
-            <li><%= link_to 'Home', controller: "static_pages", action: "home"%></li>
-            <li><%= link_to 'Projects', controller: "static_pages", action: "projects"%></li>
-            <li><%= link_to 'About', controller: "static_pages", action: "about"%></li>
-            <li><%= link_to 'Contact', controller: "static_pages", action: "contact"%></li>
+            <li><%= link_to 'Home', root_path%></li>
+            <li><%= link_to 'Project', static_page_path('projects')%></li>
+            <li><%= link_to 'About', static_page_path('about')%></li>
+            <li><%= link_to 'Contact', static_page_path('contact')%></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+  <% unless current_page?('/') || current_page?('/static_pages/home') %>
+    <div class="menu-logo">
+      <%= image_tag('rlm_logo.png', height: '40px', width: '40px') %>
+    </div>
+  <% end %>
 </nav>

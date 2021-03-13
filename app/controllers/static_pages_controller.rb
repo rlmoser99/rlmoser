@@ -1,19 +1,25 @@
 # frozen_string_literal: true
 
 class StaticPagesController < ApplicationController
-  def home
-    render
+  def page
+    if published_page?(page_params[:page])
+      render "static_pages/#{page_params[:page]}.html.erb"
+    else
+      redirect_to :root
+    end
   end
 
-  def about
-    render
-  end
+  private
 
-  def contact
-    render
-  end
+    def page_params
+      params.permit(:page)
+    end
 
-  def projects
-    render
-  end
+    def published_pages
+      %w[home projects contact about]
+    end
+
+    def published_page?(page)
+      published_pages.include?(page)
+    end
 end

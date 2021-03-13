@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root 'static_pages#home'
+  get "static_pages/:page", to: "static_pages#page", as: :static_page
 
-  StaticPagesController.action_methods.each do |action|
-    get "static_pages/#{action}", to: "static_pages##{action}", as: "#{action}_static_page"
-  end
+  root 'static_pages/home'
 end

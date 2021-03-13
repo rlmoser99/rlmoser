@@ -46,8 +46,10 @@ img {
 :root {
   --primary-color: #333333;
   --accent-color: #6ecfde;
+  --light-color: #c2c2c2;
   --overlay-color: rgba(51, 51, 51 , 0.9);
   --primary-font: 'Roboto', sans-serif;
+  --accent-font: 'Euphoria Script', cursive;
 }
 
 body {
@@ -60,9 +62,9 @@ body {
   min-height: -webkit-fill-available;
 }
 
-.page-container {
-  max-width: 1200px;
-}
+// .page-container {
+//   max-width: 1200px;
+// }
 
 a {
   color: #ffffff;
@@ -80,4 +82,28 @@ main {
 h1 {
   font-weight: 400;
   margin-bottom: 15px;
+}
+
+.content-container {
+  padding: 0 2rem;
+}
+
+.page-title {
+  font-family: var(--accent-font);
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.page-title:before {
+  content: '{ ';
+}
+
+.page-title:after {
+  content: ' }';
+}
+
+.page-title:before,
+.page-title:after {
+  background: inherit;
+  font-family: var(--primary-font);
 }

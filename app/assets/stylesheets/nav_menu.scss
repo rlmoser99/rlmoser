@@ -1,9 +1,23 @@
-.menu-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.menu-logo {
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  padding: 1rem;
+}
+
+// .menu-wrap {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+// }
 
 .menu-wrap .toggler {
   cursor: pointer;
@@ -143,9 +157,9 @@
 }
 
 @media (min-width: 768px) {
-  .menu-wrap {
-    position: static;
-  }
+  // .menu-wrap {
+  //   position: static;
+  // }
 
   .menu-wrap .hamburger {
     visibility: hidden;
@@ -155,11 +169,11 @@
     height: 60px;
     position: static;
     visibility: visible;
-    width: 100%;
   }
 
   .menu-wrap .menu > div {
     position: static;
+    width: auto;
   }
 
   .menu-wrap .menu > div > div {
