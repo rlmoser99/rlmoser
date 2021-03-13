@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'static_pages#home'
+
+  StaticPagesController.action_methods.each do |action|
+    get "static_pages/#{action}", to: "static_pages##{action}", as: "#{action}_static_page"
+  end
 end

@@ -1,0 +1,19 @@
+.hero-container {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  > * { flex: 0 1 auto; }
+}
+
+.hero-content {
+  margin-top: 60px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+}

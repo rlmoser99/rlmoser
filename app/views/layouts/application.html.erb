@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rlmoser</title>
+    <title>Rachel Moser's Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/934a39e35a.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <%= yield %>
+  
+    <%= render "layouts/header" %>
+    <main>
+      <div class="page-container">
+        <%= yield %>
+      </div>
+    </main>
+    <%= render "layouts/footer" %>
+
   </body>
 </html>
