@@ -31,7 +31,7 @@
   > * { flex: 0 1 auto; }
 }
 
-/* Hamburger Line */
+// Hamburger Line
 .menu-wrap .hamburger > div {
   align-items: center;
   background: #fff;
@@ -45,7 +45,7 @@
   > * { flex: 0 1 auto; }
 }
 
-/* Hamburger Lines - Top & Bottom */
+// Hamburger Lines - Top & Bottom
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
   content: '';
@@ -57,38 +57,45 @@
   z-index: 1;
 }
 
-/* Moves Bottom Line Down */
+// Moves Bottom Line Down
 .menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
-/* Toggler Animation */
+// Toggler Animation
 .menu-wrap .toggler:checked + .hamburger > div {
   background-color: var(--accent-color);
   transform: rotate(135deg);
 }
 
-/* Turns Lines Into X */
+// Turns Hamburger Lines Into X
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
-/* Rotate On Hover When Checked */
+// Hover Only Animation When Checked
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
 
-/* Show Menu */
+// Show Menu
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-/* Transition of menu links appearing */
+// Transition of menu links appearing
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition: opacity 1.5s ease;
+  transition: opacity 2s ease;
+}
+
+// Diagonal Slide Transition of the menu background
+.menu-wrap .toggler:checked ~ .menu > div {
+  bottom: 0;
+  left: 0;
+  transition: .1s;
 }
 
 .menu-wrap .menu {
@@ -102,15 +109,21 @@
   width: 100%;
 }
 
+// Menu Links Off Screen
 .menu-wrap .menu > div {
   background: var(--overlay-color);
+  bottom: 100vh;
   display: flex;
   flex: none;
   height: 100vh;
+  left: -100vw;
+  position: absolute;
+  transition: .1s;
   width: 100vw;
   > * { flex: 0 1 auto; }
 }
 
+// Menu Links
 .menu-wrap .menu > div > div {
   margin-top: 80px;
   max-height: 100vh;
@@ -134,6 +147,10 @@
     position: static;
   }
 
+  .menu-wrap .hamburger {
+    visibility: hidden;
+  }
+
   .menu-wrap .menu {
     height: 60px;
     position: static;
@@ -141,8 +158,8 @@
     width: 100%;
   }
 
-  .menu-wrap .hamburger {
-    visibility: hidden;
+  .menu-wrap .menu > div {
+    position: static;
   }
 
   .menu-wrap .menu > div > div {
