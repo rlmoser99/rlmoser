@@ -1,0 +1,23 @@
+.content-container {
+  padding: 0 2rem;
+}
+
+.page-title {
+  font-family: $font-accent;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.page-title:before {
+  content: '{ ';
+}
+
+.page-title:after {
+  content: ' }';
+}
+
+.page-title:before,
+.page-title:after {
+  background: inherit;
+  font-family: $font-primary;
+}

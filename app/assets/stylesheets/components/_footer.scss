@@ -1,6 +1,6 @@
 footer {
   align-items: center;
-  background-color: #C2C2C2;
+  background-color: $color-primary-light;
   display: flex;
   height: 5rem;
   flex: 0 0 content;
@@ -9,7 +9,7 @@ footer {
 }
 
 .social-icon {
-  background: #333333;
+  background: $color-primary-dark;
   border-radius: 50%;
   height: 3.5rem;
   width: 3.5rem;
@@ -19,7 +19,7 @@ footer {
 }
 
 .social-icon i {
-  color: #c2c2c2;
+  color: $color-primary-light;
   font-size: 2rem;
 }
 
@@ -28,6 +28,6 @@ footer {
 }
 
 .inverted i {
-  color: #333333;
+  color: $color-primary-dark;
   font-size: 3.5rem;
 }
