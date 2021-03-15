@@ -6,3 +6,69 @@
   flex-direction: column;
   > * { flex: 0 1 auto; }
 }
+
+.project-container {
+  box-shadow: 0 0 10px color(primary-dark);
+  margin: 2rem 0;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: lighten(color(primary-light), 5%);
+}
+
+.project-wrapper {
+  @include desktop {
+    display: flex;
+    > * { flex: 0 1 auto; }
+  }
+}
+
+.project-image {
+  a {
+    background-color: inherit;
+    padding: 0;
+  }
+
+  a:hover {
+    background-color: inherit;
+  }
+
+  @include desktop {
+    // width: 60%;
+    flex-shrink: 2;
+    margin-right: 2rem;
+  }
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  > * { flex: 0 1 auto; }
+}
+
+a {
+  background-color: color(primary-dark);
+  padding: .3rem .9rem;
+  text-decoration: none;
+  font-weight: 100;
+  border-radius: 5px;
+  color: lighten(color(primary-light), 5%);
+
+  &:hover {
+    background-color: $dark-hover;
+  }
+}
+
+.project-summary {
+  font-weight: 100;
+}
+
+.project-list {
+  list-style: circle;
+  padding: 15px;
+  font-weight: 100;
+}
+
+.project-item {
+  margin: .5rem 0;
+}

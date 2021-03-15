@@ -1,6 +1,9 @@
 $font-primary: 'Roboto', sans-serif;
 $font-accent: 'Euphoria Script', cursive;
 
+$dark-hover: lighten(#333333, 6%);
+// Create all the colors without the function
+
 $colors: (
   primary-dark: #333333,
   primary-light: #c2c2c2,
