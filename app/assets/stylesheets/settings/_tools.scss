@@ -1,0 +1,11 @@
+@mixin content-max {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+      @content;
+  }
+}
+

@@ -1,18 +1,9 @@
-.content-container {
-  background-color: color(primary-light);
-  color: color(primary-dark);
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  > * { flex: 0 1 auto; }
-}
-
 .card {
-  box-shadow: 0 0 10px color(primary-dark);
+  box-shadow: 0 0 10px $color-primary-dark;
   margin-bottom: 2rem;
   padding: 30px;
   border-radius: 5px;
-  background-color: lighten(color(primary-light), 5%);
+  background-color: $color-primary-lightened;
 
   &-header {
     display: flex;
@@ -35,7 +26,7 @@
 }
 
 .card-btn {
-  background-color: lighten(color(primary-light), 5%);
+  background-color: $color-primary-lightened;
   display: flex;
   
   a {
@@ -44,26 +35,26 @@
 
   .demo-btn {
     padding: .3rem;
-    color: color(primary-dark);
+    color: $color-primary-dark;
     border-radius: 5px 0 0 5px;
-    border: 1px solid color(primary-dark);
+    border: 1px solid $color-primary-dark;
     
     &:hover {
-      background-color: color(primary-light);
+      background-color: $color-primary-light;
     }
   }
 
   .code-btn {
     padding: .3rem;
-    background-color: color(primary-dark);
-    color: lighten(color(primary-light), 5%);
+    background-color: $color-primary-dark;
+    color: $color-primary-lightened;
     border-radius: 0 5px 5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover {
-      background-color: $dark-hover;
+      background-color: $color-primary-darkened;
     }
   }
 }

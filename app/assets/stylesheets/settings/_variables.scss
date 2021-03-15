@@ -1,25 +1,15 @@
+$color-primary-dark: #333333;
+$color-primary-light: #c2c2c2;
+$color-accent: #6ecfde;
+$color-white: #ffffff;
+$color-transparent: rgba(51, 51, 51 , 0.9);
+
+$color-primary-darkened: lighten($color-primary-dark, 6%);
+$color-primary-lightened: lighten($color-primary-light, 5%);
+
 $font-primary: 'Roboto', sans-serif;
 $font-accent: 'Euphoria Script', cursive;
 
-$dark-hover: lighten(#333333, 6%);
-// Create all the colors without the function
-
-$colors: (
-  primary-dark: #333333,
-  primary-light: #c2c2c2,
-  accent: #6ecfde,
-  white: #ffffff,
-  transparent: rgba(51, 51, 51 , 0.9)
-);
-
-@function color($color-name) {
-  @return map-get($colors, $color-name)
-}
-  
 $desktop: 768px;
 
-@mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
-}
+// Look at make variables for spacing.
