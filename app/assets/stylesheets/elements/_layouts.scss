@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  background-color: $color-primary-dark;
-  color: $color-white;
+  background-color: color(primary-dark);
+  color: color(white);
   display: flex;
   flex-direction: column;
   font-family: $font-primary;

@@ -1,6 +1,6 @@
 .content-container {
-  background-color: $color-primary-light;
-  color: $color-primary-dark;
+  background-color: color(primary-light);
+  color: color(primary-dark);
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
