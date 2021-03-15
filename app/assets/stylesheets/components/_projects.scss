@@ -7,22 +7,70 @@
   > * { flex: 0 1 auto; }
 }
 
-.project-container {
+.card {
   box-shadow: 0 0 10px color(primary-dark);
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   padding: 30px;
   border-radius: 5px;
   background-color: lighten(color(primary-light), 5%);
-}
 
-.project-wrapper {
-  @include desktop {
+  &-header {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    align-items: center;
     > * { flex: 0 1 auto; }
+
+    h3 {
+      margin-right: 1rem;
+    }
+  }
+
+  &-content {
+    @include desktop {
+      display: flex;
+      > * { flex: 0 1 auto; }
+    }
   }
 }
 
-.project-image {
+.card-btn {
+  background-color: lighten(color(primary-light), 5%);
+  display: flex;
+  
+  a {
+    text-decoration: none;
+  }
+
+  .demo-btn {
+    padding: .3rem;
+    color: color(primary-dark);
+    border-radius: 5px 0 0 5px;
+    border: 1px solid color(primary-dark);
+    
+    &:hover {
+      background-color: color(primary-light);
+    }
+  }
+
+  .code-btn {
+    padding: .3rem;
+    background-color: color(primary-dark);
+    color: lighten(color(primary-light), 5%);
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $dark-hover;
+    }
+  }
+}
+
+.card-img {
+  max-width: 350px;
+
   a {
     background-color: inherit;
     padding: 0;
@@ -33,42 +81,34 @@
   }
 
   @include desktop {
-    // width: 60%;
     flex-shrink: 2;
     margin-right: 2rem;
   }
 }
 
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  > * { flex: 0 1 auto; }
-}
+.card-description {
+  padding-top: 15px;
 
-a {
-  background-color: color(primary-dark);
-  padding: .3rem .9rem;
-  text-decoration: none;
-  font-weight: 100;
-  border-radius: 5px;
-  color: lighten(color(primary-light), 5%);
-
-  &:hover {
-    background-color: $dark-hover;
+  strong {
+    font-weight: 400;
   }
-}
 
-.project-summary {
-  font-weight: 100;
-}
+  p {
+    font-weight: 100;
+  }
 
-.project-list {
-  list-style: circle;
-  padding: 15px;
-  font-weight: 100;
-}
+  ul {
+    list-style: circle;
+    padding-left: 15px;
+    font-weight: 100;
 
-.project-item {
-  margin: .5rem 0;
+    li {
+      margin-left: .5rem;
+      padding: .25rem 0;
+    }
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
 }

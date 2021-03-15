@@ -4,8 +4,11 @@
 
 .page-title {
   font-family: $font-accent;
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 2rem 0;
+  @include desktop {
+    font-size: 5rem;
+  }
 }
 
 .page-title:before {

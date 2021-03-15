@@ -7,6 +7,11 @@
   > * { flex: 0 1 auto; }
 }
 
+.hero-image {
+  // use max() here because sizing is off
+  width: 200px;
+}
+
 .hero-content {
   margin-top: 60px;
 }
