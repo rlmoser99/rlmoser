@@ -1,6 +1,6 @@
 footer {
-  // background-color: $color-primary-light;
-  background-color: $color-test-light;
+  background-color: $color-primary-light;
+  // background-color: $color-test-light;
   height: 5rem;
   flex: 0 0 content;
 
@@ -12,8 +12,8 @@ footer {
 
   .footer-container {
     align-items: center;
-    // background-color: $color-primary-light;
-    background-color: $color-test-light;
+    background-color: $color-primary-light;
+    // background-color: $color-test-light;
     display: flex;
     height: 5rem;
     justify-content: space-around;
@@ -36,8 +36,8 @@ footer {
     width: 3.5rem;
 
     i {
-      // color: $color-primary-light;
-      color: $color-test-light;
+      color: $color-primary-light;
+      // color: $color-test-light;
       font-size: 2rem;
     }
   }
