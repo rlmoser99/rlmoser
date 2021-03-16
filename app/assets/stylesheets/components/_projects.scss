@@ -1,22 +1,39 @@
-// .project-container {
-//   @include desktop {
-//     display: flex;
-//     // justify-content: center;
-//     align-items: flex-start;
-//     > * { flex: 0 1 auto; }
-//   }
-// }
+.project-container {
+  margin-top: var(--spacing);
+  box-shadow: 0 4px 14px $color-transparent-light;
+  border-radius: 5px;
+
+  @include laptop {
+    display: flex;
+    > * { flex: 0 1 auto; }
+  }
+}
+
+.project-reverse {
+  @include laptop {
+    flex-direction: row-reverse;
+
+    .project-img {
+      border-radius: 0 5px 5px 0;
+    }
+
+    .card {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+}
+
 .content-title {
   background-color: $color-primary-dark;
   padding: 0 var(--spacing);
 }
 
 .card {
-  // margin-bottom: 2rem;
-  padding: var(--spacing) 0;
-  border-radius: 5px;
   color: $color-primary-dark;
-  background-color: $color-primary-light;
+  background-color: $color-test-light;
+  border-radius: 0 0 5px 5px;
+  padding: var(--spacing);
+  flex: 1 1 auto;
   
   &-header {
     display: flex;
@@ -30,35 +47,14 @@
     }
   }
 
-  &-content {
-    background-color: $color-test-light;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 14px $color-transparent;
-  }
-
-  &-reverse {
-    @include desktop {
-      flex-direction: row-reverse;
-
-      .card-img {
-        margin-right: 0;
-        margin-left: var(--spacing);
-      }
-    }
-  }
-
-  @include desktop {
-    display: flex;
-    align-items: flex-start;
+  @include laptop {
+    border-radius: 0 5px 5px 0;
   }
 }
 
 .card-btn {
-  // background-color: $color-primary-lightened;
   background-color: $color-test-light;
   display: flex;
-  box-shadow: 0 4px 14px $color-transparent;
   border-radius: 5px;
   
   a {
@@ -91,14 +87,13 @@
   }
 }
 
-.card-img {
-  max-width: 400px;
-  // padding-bottom: var(--spacing);
-  margin: 0 auto;
-  // padding: var(--spacing);
-  // background-color: $color-test-light;
-  margin-bottom: var(--spacing);
-  border-radius: 5px;
+.project-img {
+  background-color: $color-primary-dark;
+  width: 100%;
+  height: 20vh;
+  border-radius: 5px 5px 0 0;
+  background-size: cover;
+  background-position: top center;
 
   a {
     background-color: inherit;
@@ -110,31 +105,18 @@
   }
 
   img {
-    // border: 5px solid $color-test-light;
-    // box-shadow: 0 0 10px lighten($color-primary-dark, 10);
-    box-shadow: 0 4px 14px $color-transparent;
+    background-size: cover;
   }
 
-  @include desktop {
-    margin-right: var(--spacing);
+  @include laptop {
+    width: 60%;
+    height: auto;
+    border-radius: 5px 0 0 5px;
   }
 }
 
-// .img-reverse {
-//   @include desktop {
-//     // flex-shrink: 2;
-//     margin-right: 0;
-//     margin-left: 2rem;
-//   }
-// }
-
 .card-description {
   padding-top: 15px;
-
-  strong {
-    // font-weight: 400;
-    font-weight: 600;
-  }
 
   .card-summary {
     font-weight: 100;
@@ -142,22 +124,20 @@
     margin-bottom: 1rem;
   }
 
-  ul {
-    list-style: circle;
-    padding-left: 15px;
-    // font-weight: 100;
-
-    li {
-      margin-left: .5rem;
-      padding: .25rem 0;
-    }
-  }
-
-  @include desktop {
+  @include laptop {
     padding-top: 0;
 
     p {
       font-size: 1.1rem;
     }
   }
+}
+
+.flight-booker-img {
+  background-image: url(asset_path("project-flight-booker.png"));
+}
+
+.chess-img {
+  background-image: url(asset_path("project-chess.png"));
+  background-position: top left;
 }

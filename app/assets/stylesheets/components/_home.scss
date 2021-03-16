@@ -6,7 +6,7 @@
   flex-direction: column;
   > * { flex: 0 1 auto; }
 
-  @include desktop {
+  @include tablet {
     flex-direction: row;
     justify-content: center;
   }
@@ -15,7 +15,7 @@
 .hero-image {
   // use max() here because sizing is off
   width: 200px;
-  @include desktop {
+  @include tablet {
     margin-bottom: 120px;
   }
 }
@@ -23,7 +23,7 @@
 .hero-content {
   margin-top: 60px;
 
-  @include desktop {
+  @include tablet {
     margin-top: 0;
     margin-left: 1rem;
     margin-bottom: 120px;

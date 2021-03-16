@@ -1,10 +1,9 @@
 footer {
   background-color: $color-primary-light;
-  // background-color: $color-test-light;
   height: 5rem;
   flex: 0 0 content;
 
-  @include desktop {
+  @include tablet {
     display: flex;
     justify-content: flex-end;
     > * { flex: 0 1 auto; }
@@ -13,13 +12,12 @@ footer {
   .footer-container {
     align-items: center;
     background-color: $color-primary-light;
-    // background-color: $color-test-light;
     display: flex;
     height: 5rem;
     justify-content: space-around;
     > * { flex: 0 1 auto; }
 
-    @include desktop {
+    @include tablet {
       width: 50%;
       justify-content: space-between;
       padding: 0 var(--spacing);
@@ -37,7 +35,6 @@ footer {
 
     i {
       color: $color-primary-light;
-      // color: $color-test-light;
       font-size: 2rem;
     }
   }

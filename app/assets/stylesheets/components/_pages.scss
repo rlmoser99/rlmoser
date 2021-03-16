@@ -1,8 +1,5 @@
 .content-container {
   background-color: $color-primary-light;
-  // background-color: $color-test-light;
-  // background-color: $color-primary-dark;
-  // color: $color-primary-dark;
   color: $color-test-light;
   display: flex;
   flex: 1 1 auto;
@@ -16,9 +13,9 @@
   color: $color-accent;
   text-align: center;
   font-size: 4rem;
-  // margin: 2rem 0;
   margin-bottom: 2rem;
-  @include desktop {
+  
+  @include tablet {
     font-size: 5rem;
     text-align: left;
   }
