@@ -6,5 +6,38 @@
   a:hover {
     color: $color-black;
   }
+
+  @include laptop {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    > * {flex: 0 1 auto;}
+  }
+}
+
+.about-content {
   @include content-max;
+}
+
+.about-picture {
+  visibility: hidden;
+  
+  padding: var(--spacing);
+  margin: 0 auto;
+  transform: rotate(10deg);
+  
+  img {
+    border-radius: $corner-radius;
+    box-shadow: $drop-shadow;
+    width: 300px;
+  }
+
+  @include desktop {
+    visibility: visible;
+    align-self: center;
+  }
 }
