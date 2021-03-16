@@ -5,15 +5,29 @@
   flex: 1 1 auto;
   flex-direction: column;
   > * { flex: 0 1 auto; }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .hero-image {
   // use max() here because sizing is off
   width: 200px;
+  @include desktop {
+    margin-bottom: 120px;
+  }
 }
 
 .hero-content {
   margin-top: 60px;
+
+  @include desktop {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 120px;
+  }
 }
 
 .hero-content h1 {
@@ -22,4 +36,5 @@
 
 .hero-content h2 {
   font-size: 2rem;
+  font-weight: 100;
 }

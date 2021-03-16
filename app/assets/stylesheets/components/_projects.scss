@@ -1,14 +1,17 @@
 .card {
-  box-shadow: 0 0 10px $color-primary-dark;
-  margin-bottom: 2rem;
-  padding: 30px;
+  box-shadow: 0 0 10px #000000;
+  // box-shadow: 0 0 10px lighten($color-primary-dark, 30);
+  margin-bottom: 4rem;
+  padding: 2rem;
   border-radius: 5px;
-  background-color: $color-primary-lightened;
-
+  color: $color-primary-dark;
+  // background-color: $color-primary-lightened;
+  background-color: $color-test-light;
+  
   &-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 2rem;
     align-items: center;
     > * { flex: 0 1 auto; }
 
@@ -23,10 +26,17 @@
       > * { flex: 0 1 auto; }
     }
   }
+
+  &-reverse {
+    @include desktop {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .card-btn {
-  background-color: $color-primary-lightened;
+  // background-color: $color-primary-lightened;
+  background-color: $color-test-light;
   display: flex;
   
   a {
@@ -61,6 +71,7 @@
 
 .card-img {
   max-width: 350px;
+  width: 50vw;
 
   a {
     background-color: inherit;
@@ -72,8 +83,16 @@
   }
 
   @include desktop {
-    flex-shrink: 2;
+    // flex-shrink: 2;
     margin-right: 2rem;
+  }
+}
+
+.img-reverse {
+  @include desktop {
+    // flex-shrink: 2;
+    margin-right: 0;
+    margin-left: 2rem;
   }
 }
 
@@ -81,17 +100,19 @@
   padding-top: 15px;
 
   strong {
-    font-weight: 400;
+    // font-weight: 400;
+    font-weight: 600;
   }
 
   p {
     font-weight: 100;
+    font-size: 1.25rem;
   }
 
   ul {
     list-style: circle;
     padding-left: 15px;
-    font-weight: 100;
+    // font-weight: 100;
 
     li {
       margin-left: .5rem;

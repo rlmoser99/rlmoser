@@ -1,3 +1,10 @@
 .about-container {
+  a {
+    color: $color-primary-dark;
+  }
+
+  a:hover {
+    color: $color-black;
+  }
   @include content-max;
 }

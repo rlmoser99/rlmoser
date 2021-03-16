@@ -1,17 +1,28 @@
 nav {
   height: 60px;
+
+  // @include desktop {
+  //   height: 100px;
+  // }
 }
+
+// transition: all 3s ease;
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 0 var(--spacing);
+  // align-items: center;
   // @include content-max;
 }
 
 .menu-logo {
   padding: 1rem;
   width: 60px;
+
+  @include desktop {
+    width: 100px;
+  }
 }
 
 .menu-wrap .toggler {
@@ -31,10 +42,11 @@ nav {
   display: flex;
   height: 60px;
   justify-content: center;
-  left: 0;
+  // changed left & top from 0 to 1rem to match 2rem --space padding
+  left: 1rem;
   padding: 1rem;
   position: absolute;
-  top: 0;
+  top: 1rem;
   width: 60px;
   z-index: 1;
   > * { flex: 0 1 auto; }
@@ -172,6 +184,12 @@ nav {
   font-size: 1.5rem;
   list-style: none;
   padding: 1rem;
+
+  @include desktop {
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .menu-wrap .menu > div > div > ul > li > a {

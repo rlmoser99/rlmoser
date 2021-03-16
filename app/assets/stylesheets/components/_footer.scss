@@ -1,11 +1,30 @@
 footer {
-  align-items: center;
-  background-color: $color-primary-light;
-  display: flex;
+  // background-color: $color-primary-light;
+  background-color: $color-test-light;
   height: 5rem;
   flex: 0 0 content;
-  justify-content: space-around;
-  > * { flex: 0 1 auto; }
+
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    > * { flex: 0 1 auto; }
+  }
+
+  .footer-container {
+    align-items: center;
+    // background-color: $color-primary-light;
+    background-color: $color-test-light;
+    display: flex;
+    height: 5rem;
+    justify-content: space-around;
+    > * { flex: 0 1 auto; }
+
+    @include desktop {
+      width: 50%;
+      justify-content: space-between;
+      padding: 0 var(--spacing);
+    }
+  }
 
   .social-icon {
     align-items: center;
@@ -17,7 +36,8 @@ footer {
     width: 3.5rem;
 
     i {
-      color: $color-primary-light;
+      // color: $color-primary-light;
+      color: $color-test-light;
       font-size: 2rem;
     }
   }
