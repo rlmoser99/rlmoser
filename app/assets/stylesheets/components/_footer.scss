@@ -2,10 +2,12 @@ footer {
   background-color: $color-primary-light;
   height: 5rem;
   flex: 0 0 content;
+  padding: 0 var(--spacing);
 
   @include tablet {
     display: flex;
     justify-content: flex-end;
+
     > * { flex: 0 1 auto; }
   }
 
@@ -15,12 +17,12 @@ footer {
     display: flex;
     height: 5rem;
     justify-content: space-around;
+    
     > * { flex: 0 1 auto; }
 
     @include tablet {
-      width: 50%;
       justify-content: space-between;
-      padding: 0 var(--spacing);
+      width: 350px;
     }
   }
 
@@ -32,6 +34,8 @@ footer {
     height: 3.5rem;
     justify-content: center;
     width: 3.5rem;
+
+    > * { flex: 0 1 auto; }
 
     i {
       color: $color-primary-light;

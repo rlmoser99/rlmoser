@@ -26,8 +26,8 @@
 .about-picture {
   visibility: hidden;
   
-  padding: var(--spacing);
   margin: 0 auto;
+  padding: var(--spacing);
   transform: rotate(10deg);
   
   img {
@@ -37,7 +37,7 @@
   }
 
   @include desktop {
-    visibility: visible;
     align-self: center;
+    visibility: visible;
   }
 }

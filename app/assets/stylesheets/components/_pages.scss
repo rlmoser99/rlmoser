@@ -5,6 +5,7 @@
   flex: 1 1 auto;
   flex-direction: column;
   padding: var(--spacing) var(--spacing) 0;
+  
   > * { flex: 0 1 auto; }
 }
 
@@ -14,11 +15,11 @@
 }
 
 .page-title {
-  font-family: $font-accent;
   color: $color-accent;
-  text-align: center;
+  font-family: $font-accent;
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing);
+  text-align: center;
   
   @include tablet {
     font-size: 5rem;
