@@ -8,36 +8,3 @@
   
   > * { flex: 0 1 auto; }
 }
-
-.content-title {
-  background-color: $color-primary-dark;
-  padding: 0 var(--spacing);
-}
-
-.page-title {
-  color: $color-accent;
-  font-family: $font-accent;
-  font-size: 4rem;
-  margin-bottom: var(--spacing);
-  text-align: center;
-  
-  @include tablet {
-    font-size: 5rem;
-    text-align: left;
-  }
-}
-
-.page-title:before {
-  content: '{ ';
-}
-
-.page-title:after {
-  content: ' }';
-}
-
-.page-title:before,
-.page-title:after {
-  background: inherit;
-  color: $color-white;
-  font-family: $font-primary;
-}

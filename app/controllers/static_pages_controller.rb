@@ -2,8 +2,9 @@
 
 class StaticPagesController < ApplicationController
   def page
-    if published_page?(page_params[:page])
-      render "static_pages/#{page_params[:page]}.html.erb"
+    @page_title = page_params[:page]
+    if published_page?(@page_title)
+      render "static_pages/#{@page_title}.html.erb"
     else
       redirect_to :root
     end
@@ -16,7 +17,7 @@ class StaticPagesController < ApplicationController
     end
 
     def published_pages
-      %w[home projects contact about]
+      %w[home projects about]
     end
 
     def published_page?(page)

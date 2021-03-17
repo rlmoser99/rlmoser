@@ -20,8 +20,18 @@ $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1440px;
 
+// menu-padding is difference of using rem for font-size and height
 :root {
   --spacing: 2rem;
+  --menu-padding: 14px;
+  --menu-height: 3rem;
+}
+
+@media screen and (min-width: $laptop) {
+	:root {
+    --menu-height: 5rem;
+    --menu-padding: 22px;
+  }
 }
 
 @media screen and (min-width: $desktop) {
