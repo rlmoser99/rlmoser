@@ -159,6 +159,11 @@
   background-position: top center;
 }
 
+.playground-img {
+  background-image: url(asset_path("project-playground.png"));
+  background-position: bottom left;
+}
+
 .chess-img {
   background-image: url(asset_path("project-chess.png"));
   background-position: top left;
