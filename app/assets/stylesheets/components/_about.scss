@@ -7,20 +7,53 @@
     color: $color-black;
   }
 
+  h3 {
+    padding-bottom: 1rem;
+  }
+  
+  .about-card {
+    background-color: $color-light-gray;
+    border-radius: $corner-radius;
+    box-shadow: $drop-shadow;
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+
+    p {
+      color: $color-black;
+      font-weight: 100;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   @include laptop {
     display: flex;
     flex-direction: row;
 
+    .about-card p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
     p {
       font-size: 1.1rem;
+      line-height: 1.65rem;
     }
 
     > * {flex: 0 1 auto;}
   }
 
   @include desktop {
+    .about-card p {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
     }
   }
 }
