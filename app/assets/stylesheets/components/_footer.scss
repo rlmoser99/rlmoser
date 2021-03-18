@@ -1,22 +1,28 @@
 footer {
   background-color: $color-primary-light;
   height: 5rem;
-  flex: 0 0 content;
-  padding: 0 var(--spacing);
-
-  @include tablet {
-    display: flex;
-    justify-content: flex-end;
-
-    > * { flex: 0 1 auto; }
-  }
 
   .footer-container {
+    flex: 0 0 content;
+    margin: 0 auto;
+    max-width: $content-max;
+    padding: 0 var(--spacing);
+  
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+  
+      > * { flex: 0 1 auto; }
+    }
+  }
+
+  .icon-container {
     align-items: center;
     background-color: $color-primary-light;
     display: flex;
     height: 5rem;
     justify-content: space-between;
+    max-width: $content-max;
     
     > * { flex: 0 1 auto; }
 

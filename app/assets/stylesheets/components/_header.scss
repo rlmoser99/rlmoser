@@ -1,5 +1,10 @@
 .nav-container {
   padding: 0 var(--spacing);
+  max-width: $content-max;
+
+  @include desktop {
+    margin: 0 auto;
+  }
 }
 
 .header-title {

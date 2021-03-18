@@ -2,7 +2,6 @@
   border-radius: $corner-radius;
   box-shadow: $drop-shadow;
   margin-bottom: var(--spacing);
-  max-width: 1600px;
 
   @include laptop {
     box-shadow: none;

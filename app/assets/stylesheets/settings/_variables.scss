@@ -19,6 +19,8 @@ $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1440px;
 
+$content-max: 1600px;
+
 // menu-padding is difference of using rem for font-size and height
 :root {
   --spacing: 2rem;
