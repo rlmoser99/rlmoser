@@ -16,12 +16,11 @@ footer {
     background-color: $color-primary-light;
     display: flex;
     height: 5rem;
-    justify-content: space-around;
+    justify-content: space-between;
     
     > * { flex: 0 1 auto; }
 
     @include tablet {
-      justify-content: space-between;
       width: 350px;
     }
   }
