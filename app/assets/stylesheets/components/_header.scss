@@ -213,9 +213,11 @@
   }
 }
 
+// Padding-bottom is the difference between rem for font-size and height for page title
 .menu-wrap .menu > div > div > ul {
   @include tablet {
     display: flex;
+    padding-bottom: var(--menu-padding);
     
     > * { flex: 0 1 auto; }
   }
@@ -227,11 +229,10 @@
   list-style: none;
   padding: 1rem;
 
-  // Height & margin to match font size of page title
   @include tablet {
     align-items: flex-end;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 calc(var(--spacing) / 2);
 
     > * { flex: 0 1 auto; }
 
@@ -241,17 +242,16 @@
   }
 }
 
-// Padding-bottom is the difference between rem for font-size and height
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
-  padding-bottom: var(--menu-padding);
+  border-bottom: 2px solid $color-primary-dark;
 
   &:hover {
-    color: $color-primary-light;
+    border-color: $color-teal;
   }
 
   &:active {
-    color: $color-accent;
+    color: $color-light-gray;
   }
 }
