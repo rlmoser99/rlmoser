@@ -59,12 +59,12 @@
 .card-header {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1rem;
   > * { flex: 0 1 auto; }
 
   h3 {
-    margin-right: 1rem;
+    margin: 0 1rem 1rem 0;
   }
 
   @include laptop {
@@ -81,6 +81,7 @@
   background-color: $color-light-gray;
   border-radius: $corner-radius;
   display: flex;
+  margin-bottom: 1rem;
 
   > * { flex: 0 1 auto; }
   
@@ -92,14 +93,14 @@
     border: 1px solid $color-primary-dark;
     border-radius: $corner-radius 0 0 $corner-radius;
     color: $color-primary-dark;
-    padding: .3rem;
+    padding: .3rem .6rem;
     
     &:hover {
       background-color: $color-primary-light;
     }
 
     @include laptop {
-      padding: .3rem .6rem;
+      padding: .5rem 1rem;
     }
   }
 
@@ -110,7 +111,7 @@
     color: $color-light-gray;
     display: flex;
     justify-content: center;
-    padding: .3rem;
+    padding: .3rem .6rem;
     
     > * { flex: 0 1 auto; }
 
@@ -119,7 +120,7 @@
     }
 
     @include laptop {
-      padding: .3rem .6rem;
+      padding: .5rem 1rem;
     }
   }
 
