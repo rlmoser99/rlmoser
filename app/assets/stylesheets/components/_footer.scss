@@ -26,6 +26,16 @@ footer {
     
     > * { flex: 0 1 auto; }
 
+    a {
+      text-decoration: none;
+
+      &:hover {
+        .social-icon {
+          transform: scale(1.1)
+        }
+      }
+    }
+
     @include tablet {
       width: 350px;
     }
