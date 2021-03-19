@@ -91,7 +91,7 @@
   @include laptop {
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 0 var(--spacing) calc(var(--spacing) * 2);
+    padding: 1rem 0 var(--spacing) calc(var(--spacing) * 2);
 
     img {
       margin: 0 1rem;
