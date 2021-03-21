@@ -1,6 +1,6 @@
 .nav-container {
-  padding: 0 var(--spacing);
   max-width: $content-max;
+  padding: 0 var(--spacing);
 }
 
 .header-title {
@@ -165,13 +165,13 @@
   font-size: 1.5rem;
   height: var(--menu-height);
   list-style: none;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
-  text-decoration: none;
   border-bottom: 2px solid $color-primary-dark;
+  text-decoration: none;
 
   &:hover {
     border-color: $color-accent;
@@ -218,9 +218,9 @@
   }
 
   .menu-wrap .menu > div {
+    height: auto;
     position: static;
     width: auto;
-    height: auto;
   }
 
   .menu-wrap .menu > div > div {
