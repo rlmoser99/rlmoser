@@ -4,6 +4,7 @@
     border-radius: $corner-radius;
     box-shadow: $drop-shadow;
     margin-bottom: var(--spacing);
+    max-width: 450px;
   }
 
   &-img {
@@ -45,6 +46,7 @@
       box-shadow: none;
       display: flex;
       margin: var(--spacing) 0;
+      max-width: none;
   
       > * { flex: 0 1 auto; }
     }
