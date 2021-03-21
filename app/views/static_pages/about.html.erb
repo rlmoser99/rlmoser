@@ -1,40 +1,42 @@
-<div class="content-container">
-  <div class="about-container">
-    <div class="about-content">
-      <div class="about-card">
+<main>
+  <div class="content about">
+    <div class="about-container">
+      <div class="about-content">
+        <div class="card">
+          <p class="card-summary">
+            I'm a Ruby on Rails Developer that is committed to learning new tools to build my toolbox. I am known as a creative problem-solver with <code>&lt;strong&gt;</code> attention to detail and organizational skills. I value looking at the big picture and thinking outside of the <code>{flex}</code> box.
+          </p>
+          <p class="card-summary">
+            I enjoy creating art in various mediums, riding rollercoasters, reading historical-fiction, solving logic puzzles (like
+            <a href="https://www.brainbashers.com/hitorihelp.asp" target="_blank">Hitori</a> or Sudoku), and playing board games (like
+            <a href="https://boardgamegeek.com/boardgame/36218/dominion" target="_blank">Dominion</a>,
+            <a href="https://boardgamegeek.com/boardgame/38821/settlers-catan-gallery-edition" target="_blank">Settlers of Catan</a>, or
+            <a href="https://boardgamegeek.com/boardgame/9209/ticket-ride" target="_blank">Ticket to Ride</a>).
+          </p>
+        </div>
+
+        <h3>Background</h3>
         <p>
-          I'm a Ruby on Rails Developer that is committed to learning new tools to build my toolbox. I am known as a creative problem-solver with <code>&lt;strong&gt;</code> attention to detail and organizational skills. I value looking at the big picture and thinking outside of the <code>{flex}</code> box.
+          Since 2001, I have only worked part-time sporadically because I chose to be a stay-at-parent since we do not have family nearby. I stopped working in 2016 to focus on volunteer work and learning web development. I attempted to learn on my own, but found myself in "tutorial hell"; doing different introductory material and not making much progress.
         </p>
         <p>
-          I enjoy creating art in various mediums, riding rollercoasters, reading historical-fiction, solving logic puzzles (like
-          <a href="https://www.brainbashers.com/hitorihelp.asp" target="_blank">Hitori</a> or Sudoku), and playing board games (like
-          <a href="https://boardgamegeek.com/boardgame/36218/dominion" target="_blank">Dominion</a>,
-          <a href="https://boardgamegeek.com/boardgame/38821/settlers-catan-gallery-edition" target="_blank">Settlers of Catan</a>, or
-          <a href="https://boardgamegeek.com/boardgame/9209/ticket-ride" target="_blank">Ticket to Ride</a>).
+          Once I joined <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> (TOP) in November 2019, I starting making real progress! TOP's project-based curriculum forced me to break down each project into pseudo code, get comfortable researching, and reading documentation. In addition, I wanted to get better at reading and debugging other people's code, so I started helping students in their Discord community.
+        </p>
+        <p>
+          I have experienced many highs and lows working through the curriculum. One of my lowest moments was in the Ruby testing section because I struggled to wrap my head around it. So, I explored several other resources hoping to gain more understanding, but everything I found covered the same introductory material or pertained to Rails.
+        </p>
+        <p>
+          I knew testing was important in the Ruby community, so I decided to dig deeper into each individual concept. Reading through the testing questions in Discord gave me the idea to create something that would benefit other students. Over the course of several months, I created a <a href="https://github.com/rlmoser99/ruby_rspec_TOP" target="_blank">16-lesson tutorial</a> designed to better equip TOP students to test their Ruby projects. Before I submitted this tutorial to TOP's curriculum, I invited fellow students to review and contribute to it.
+        </p>
+        <p>
+          In June 2020, I was invited to be part of <a href="https://github.com/TheOdinProject" target="_blank">TOP's maintainer team</a>. This team of people, from all over the world, volunteer to maintain its open source curriculum and Discord community. After working with this team for 6 months, I was invited to be part of their core team. This core team is half of the members of the maintainer team and makes the logistical decisions.
         </p>
       </div>
-
-      <h3>Background</h3>
-      <p>
-        Since 2001, I have only worked part-time sporadically because I chose to be a stay-at-parent since we do not have family nearby. I stopped working in 2016 to focus on volunteer work and learning web development. I attempted to learn on my own, but found myself in "tutorial hell"; doing different introductory material and not making much progress.
-      </p>
-      <p>
-        Once I joined <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> (TOP) in November 2019, I starting making real progress! TOP's project-based curriculum forced me to break down each project into pseudo code, get comfortable researching, and reading documentation. In addition, I wanted to get better at reading and debugging other people's code, so I started helping students in their Discord community.
-      </p>
-      <p>
-        I have experienced many highs and lows working through the curriculum. One of my lowest moments was in the Ruby testing section because I struggled to wrap my head around it. So, I explored several other resources hoping to gain more understanding, but everything I found covered the same introductory material or pertained to Rails.
-      </p>
-      <p>
-        I knew testing was important in the Ruby community, so I decided to dig deeper into each individual concept. Reading through the testing questions in Discord gave me the idea to create something that would benefit other students. Over the course of several months, I created a <a href="https://github.com/rlmoser99/ruby_rspec_TOP" target="_blank">16-lesson tutorial</a> designed to better equip TOP students to test their Ruby projects. Before I submitted this tutorial to TOP's curriculum, I invited fellow students to review and contribute to it.
-      </p>
-      <p>
-        In June 2020, I was invited to be part of <a href="https://github.com/TheOdinProject" target="_blank">TOP's maintainer team</a>. This team of people, from all over the world, volunteer to maintain its open source curriculum and Discord community. After working with this team for 6 months, I was invited to be part of their core team. This core team is half of the members of the maintainer team and makes the logistical decisions.
-      </p>
-    </div>
-    <div class="about-images">
-      <%= image_tag("art-woodbox.png", title: "wood burning design on wooden case", class: "rotate-left") %>
-      <%= image_tag("art-string.png", title: "geometrical art made with string", class: "rotate-right") %>
-      <%= image_tag("art-sticker.png", title: "Settlers of Catan inspired laptop sticker", class: "rotate-left") %>
+      <div class="about-images">
+        <%= image_tag("art-woodbox.png", title: "wood burning design on wooden case", class: "rotate-left") %>
+        <%= image_tag("art-string.png", title: "geometrical art made with string", class: "rotate-right") %>
+        <%= image_tag("art-sticker.png", title: "Settlers of Catan inspired laptop sticker", class: "rotate-left") %>
+      </div>
     </div>
   </div>
-</div>
+</main>

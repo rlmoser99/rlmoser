@@ -27,3 +27,7 @@ main {
   
   > * { flex: 0 1 auto; }
 }
+
+main.main-dark {
+  background-color: $color-primary-dark;
+}

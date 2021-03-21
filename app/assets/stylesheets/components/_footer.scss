@@ -7,13 +7,6 @@ footer {
     margin: 0 auto;
     max-width: $content-max;
     padding: 0 var(--spacing);
-  
-    @include tablet {
-      display: flex;
-      justify-content: flex-end;
-  
-      > * { flex: 0 1 auto; }
-    }
   }
 
   .icon-container {
@@ -28,42 +21,56 @@ footer {
 
     a {
       text-decoration: none;
+      border-bottom: none;
+      
+      .icon-circle {
+        align-items: center;
+        background: $color-primary-dark;
+        border-radius: 50%;
+        display: flex;
+        height: 3.5rem;
+        justify-content: center;
+        width: 3.5rem;
+        
+        > * { flex: 0 1 auto; }
+        
+        i {
+          color: $color-primary-light;
+          font-size: 2rem;
+        }
+      }
+      
+      .inverted {
+        background: none;
+        
+        i {
+          color: $color-primary-dark;
+          font-size: 3.5rem;
+        }
+      }
 
       &:hover {
-        .social-icon {
+        border-bottom: none;
+        
+        .icon-circle {
           transform: scale(1.1)
         }
       }
     }
-
-    @include tablet {
-      width: 350px;
-    }
   }
+}
 
-  .social-icon {
-    align-items: center;
-    background: $color-primary-dark;
-    border-radius: 50%;
-    display: flex;
-    height: 3.5rem;
-    justify-content: center;
-    width: 3.5rem;
-
-    > * { flex: 0 1 auto; }
-
-    i {
-      color: $color-primary-light;
-      font-size: 2rem;
-    }
-  }
-
-  .inverted {
-    background: none;
+@media screen and (min-width: $tablet) {
+  footer {
+    .footer-container {
+      display: flex;
+      justify-content: flex-end;
   
-    i {
-      color: $color-primary-dark;
-      font-size: 3.5rem;
+      > * { flex: 0 1 auto; }
+    }
+
+    .icon-container {
+      width: 350px;
     }
   }
 }

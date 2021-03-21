@@ -1,0 +1,51 @@
+// Double Button Group for Live Demo & Source Code
+.btn-group {
+  background-color: $color-light-gray;
+  border-radius: $corner-radius;
+  display: flex;
+  margin-bottom: 1rem;
+
+  > * { flex: 0 1 auto; }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .left-btn {
+    border: 1px solid $color-primary-dark;
+    border-radius: $corner-radius 0 0 $corner-radius;
+    color: $color-primary-dark;
+    padding: .3rem .6rem;
+    
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  .right-btn {
+    align-items: center;
+    background-color: $color-primary-dark;
+    border-radius: 0 $corner-radius $corner-radius 0;
+    color: $color-light-gray;
+    display: flex;
+    justify-content: center;
+    padding: .3rem .6rem;
+    
+    > * { flex: 0 1 auto; }
+
+    &:hover {
+      background-color: $color-black;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .btn-group {
+    font-size: 1.1rem;
+
+    .right-btn,
+    .left-btn {
+      padding: .5rem 1rem;
+    }
+  }
+}

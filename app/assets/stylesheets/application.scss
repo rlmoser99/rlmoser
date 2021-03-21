@@ -6,18 +6,12 @@
 
 @import 'elements/layouts';
 @import 'elements/typography';
-// @import 'elements/buttons';
-// @import 'elements/body';
-// @import 'elements/labels';
-// @import 'elements/links';
-// @import 'elements/inputs';
-// @import 'elements/select';
-// @import 'elements/toggle';
 
-@import 'components/pages';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/home';
-@import 'components/projects';
 @import 'components/about';
-@import 'components/contact';
+@import 'components/btn-group';
+@import 'components/card';
+@import 'components/content';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/footer';
+@import 'components/project';

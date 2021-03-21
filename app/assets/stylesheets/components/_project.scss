@@ -1,0 +1,106 @@
+.project {
+
+  &-container {
+    border-radius: $corner-radius;
+    box-shadow: $drop-shadow;
+    margin-bottom: var(--spacing);
+  }
+
+  &-img {
+    background-color: $color-primary-dark;
+    background-size: cover;
+    background-position: top center;
+    border-radius: $corner-radius $corner-radius 0 0;
+    height: 20vh;
+    width: 100%;
+  }
+
+  .card {
+    border-radius: 0 0 $corner-radius $corner-radius;
+    color: $color-primary-dark;
+    flex: 1 1 auto;
+
+    &-header {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > * { flex: 0 1 auto; }
+
+      h3 {
+        margin: 0 1rem 1rem 0;
+      }
+    }
+
+    p.card-summary {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .project {
+    &-container {
+      box-shadow: none;
+      display: flex;
+      margin: var(--spacing) 0;
+  
+      > * { flex: 0 1 auto; }
+    }
+
+    &-reverse {
+      flex-direction: row-reverse;
+
+      .project-img {
+        margin-left: var(--spacing);
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      border-radius: $corner-radius;
+      box-shadow: $drop-shadow;
+      flex-shrink: 2;
+      height: auto;
+      margin-right: var(--spacing);
+      max-width: 600px;
+      min-width: 325px;
+    }
+
+    .card {
+      border-radius: $corner-radius;
+      flex-grow: 2;
+
+      &-header {
+        h3 {
+          font-size: 2.25rem;
+        }
+      }
+
+      p.card-summary {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Specific images for each project
+.flight-booker-img {
+  background-image: url(asset_path("project-flight-booker.png"));
+  background-position: top center;
+}
+
+.playground-img {
+  background-image: url(asset_path("project-playground.png"));
+  background-position: bottom left;
+}
+
+.chess-img {
+  background-image: url(asset_path("project-chess.png"));
+  background-position: top left;
+}

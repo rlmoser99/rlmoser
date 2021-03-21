@@ -1,4 +1,5 @@
-.content-container {
+.content {
+  align-self: center;
   background-color: $color-primary-light;
   color: $color-primary-dark;
   display: flex;
@@ -8,8 +9,4 @@
   padding: var(--spacing) var(--spacing) 0;
   
   > * { flex: 0 1 auto; }
-
-  @include desktop {
-    align-self: center;
-  }
 }

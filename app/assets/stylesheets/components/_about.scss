@@ -1,54 +1,83 @@
-.about-container {
-  a {
-    border-bottom: 1px solid $color-teal;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  a:hover {
-    border-bottom: 1px solid $color-dark-teal;
-  }
-
-  h3 {
-    padding-bottom: 1rem;
-  }
-  
-  .about-card {
-    background-color: $color-light-gray;
-    border-radius: $corner-radius;
-    box-shadow: $drop-shadow;
-    margin-bottom: var(--spacing);
-    padding: var(--spacing);
-
-    p {
-      color: $color-black;
-      font-weight: 100;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+.about {
+  &-container {
+    h3 {
+      padding-bottom: 1rem;
     }
   }
 
-  @include laptop {
-    display: flex;
-    flex-direction: row;
+  .card {
+    margin-bottom: var(--spacing);
+  }
 
-    .about-card p {
+  &-images {
+    display: none;
+    padding: var(--spacing);
+    
+    img {
+      border-radius: $corner-radius;
+      box-shadow: $drop-shadow;
+      margin: 1rem 0;
+      max-width: 275px;
+      width: 15vw;
+    }
+  
+    .rotate-left {
+      transform: rotate(7deg);
+    }
+  
+    .rotate-right {
+      transform: rotate(-7deg);
+      z-index: 1
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .about {
+    &-images {
+      display: flex;
+      justify-content: center;
+  
+      > * {flex: 0 1 auto;}
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .about {
+    &-container {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.65rem;
+      }
+
+      > * {flex: 0 1 auto;}
+    }
+
+    .card p {
       font-size: 1.2rem;
       line-height: 1.8rem;
     }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.65rem;
+    &-images {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem 0 var(--spacing) calc(var(--spacing) * 2);
+
+      img {
+        margin: 0 1rem;
+        width: 15vw;
+      }
     }
-
-    > * {flex: 0 1 auto;}
   }
+}
 
-  @include desktop {
-    .about-card p {
+@media screen and (min-width: $desktop) {
+  .about {
+    .card p {
       font-size: 1.4rem;
       line-height: 2.1rem;
     }
@@ -57,49 +86,9 @@
       font-size: 1.2rem;
       line-height: 1.8rem;
     }
-  }
-}
 
-.about-images {
-  display: none;
-  padding: var(--spacing);
-  
-  img {
-    border-radius: $corner-radius;
-    box-shadow: $drop-shadow;
-    margin: 1rem 0;
-    max-width: 275px;
-    width: 15vw;
-  }
-
-  .rotate-left {
-    transform: rotate(7deg);
-  }
-
-  .rotate-right {
-    transform: rotate(-7deg);
-    z-index: 1
-  }
-
-  @include tablet {
-    display: flex;
-    justify-content: center;
-
-    > * {flex: 0 1 auto;}
-  }
-
-  @include laptop {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem 0 var(--spacing) calc(var(--spacing) * 2);
-
-    img {
-      margin: 0 1rem;
-      width: 15vw;
+    &-images {
+      padding-left: calc(var(--spacing) * 3);
     }
-  }
-
-  @include desktop {
-    padding-left: calc(var(--spacing) * 3);
   }
 }

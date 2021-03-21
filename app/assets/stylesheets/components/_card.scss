@@ -1,0 +1,15 @@
+.card {
+  background-color: $color-light-gray;
+  border-radius: $corner-radius;
+  box-shadow: $drop-shadow;
+  padding: var(--spacing);
+
+  &-summary {
+    color: $color-black;
+    font-weight: 100;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
