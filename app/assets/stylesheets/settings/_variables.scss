@@ -25,16 +25,19 @@ $content-max: 1600px;
 :root {
   --spacing: 2rem;
   --menu-height: 3rem;
+  --paragraph-font-size: 1rem;
 }
 
 @media screen and (min-width: $laptop) {
 	:root {
     --menu-height: 5rem;
+    --paragraph-font-size: 1.1rem;
   }
 }
 
 @media screen and (min-width: $desktop) {
 	:root {
     --spacing: 3rem;
+    --paragraph-font-size: 1.2rem;
   }
 }

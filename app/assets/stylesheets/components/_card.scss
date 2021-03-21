@@ -4,12 +4,30 @@
   box-shadow: $drop-shadow;
   padding: var(--spacing);
 
-  &-summary {
+  p.card-summary {
     color: $color-black;
     font-weight: 100;
   }
 
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .card {
+    p.card-summary {
+      font-size: 1.1rem;
+      line-height: 1.65rem;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .card {
+    p.card-summary {
+      font-size: 1.3rem;
+      line-height: 1.95rem;
+    }
   }
 }
