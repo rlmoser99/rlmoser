@@ -11,6 +11,7 @@
   color: $color-accent;
   font-family: $font-accent;
   font-size: var(--menu-height);
+  line-height: 1;
   margin-top: 60px;
   padding: 1rem 0;
   text-align: center;
@@ -162,6 +163,7 @@
 .menu-wrap .menu > div > div > ul > li {
   color: #fff;
   font-size: 1.5rem;
+  height: var(--menu-height);
   list-style: none;
   padding: 1rem;
 }
@@ -206,10 +208,8 @@
     visibility: hidden;
   }
 
-  // Min-Height is the difference between rem for font-size and height
   .menu-wrap .menu {
     display: flex;
-    min-height: calc(var(--menu-height) + var(--menu-padding));
     position: static;
     visibility: visible;
     width: auto;
@@ -232,10 +232,8 @@
     > * { flex: 0 1 auto; }
   }
 
-  // Padding-bottom is the difference between rem for font-size and height for page title
   .menu-wrap .menu > div > div > ul {
     display: flex;
-    padding-bottom: var(--menu-padding);
     
     > * { flex: 0 1 auto; }
   }
