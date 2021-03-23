@@ -1,8 +1,12 @@
 @mixin navigation-links {
   color: $color-white;
   font-size: 1.5rem;
-  border-bottom: 2px solid $color-primary-dark;
   text-decoration: none;
+  border-bottom: none;
+}
+
+@mixin navigation-decoration {
+  border-bottom: 2px solid $color-primary-dark;
 
   &:hover {
     border-color: $color-accent;

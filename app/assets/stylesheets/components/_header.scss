@@ -36,14 +36,13 @@ nav {
   }
 }
 
-
 .menu-wrap .toggler {
   cursor: pointer;
   height: 50px;
-  left: 0;
+  left: 1rem;
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: 1rem;
   width: 50px;
   z-index: 2;
 }
@@ -51,7 +50,6 @@ nav {
 // Top and Left are 1rem to match 2rem padding
 .menu-wrap .hamburger {
   align-items: center;
-  background: $color-primary-dark;
   display: flex;
   height: 60px;
   justify-content: center;
@@ -158,10 +156,13 @@ nav {
 
 // Menu Links
 .menu-wrap .menu > div > div {
-  margin-top: 80px;
-  max-height: 100vh;
+  align-items: flex-end;
+  display: flex;
+  max-height: 50vh;
   opacity: 0;
   padding: 0 1rem;
+
+  * > {flex: 0 1 auto;}
 }
 
 .menu-wrap .menu > div > div > ul > li {
@@ -218,12 +219,8 @@ nav {
   }
 
   .menu-wrap .menu > div > div {
-    display: flex;
-    margin-top: 0;
     opacity: 1;
     padding: 0;
-    
-    > * { flex: 0 1 auto; }
   }
 
   .menu-wrap .menu > div > div > ul {
@@ -242,5 +239,9 @@ nav {
     &:last-child {
       padding-right: 0;
     }
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a {
+    @include navigation-decoration;
   }
 }
