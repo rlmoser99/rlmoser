@@ -4,7 +4,7 @@ class StaticPagesController < ApplicationController
   def page
     @page_title = page_params[:page]
     if published_page?(@page_title)
-      render "static_pages/#{@page_title}.html.erb"
+      render "#{@page_title}.html.erb"
     else
       redirect_to :root
     end
