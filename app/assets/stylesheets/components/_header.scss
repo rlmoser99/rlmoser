@@ -1,3 +1,7 @@
+nav {
+  background-color: $color-primary-dark;
+}
+
 .nav-container {
   max-width: $content-max;
   padding: 0 var(--spacing);
@@ -169,17 +173,7 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
-  color: inherit;
-  border-bottom: 2px solid $color-primary-dark;
-  text-decoration: none;
-
-  &:hover {
-    border-color: $color-accent;
-  }
-
-  &:active {
-    color: $color-light-gray;
-  }
+  @include navigation-links;
 }
 
 @media screen and (min-width: $tablet) {

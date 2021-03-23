@@ -9,7 +9,7 @@
   }
 
   &-title {
-    color: $color-white;
+    color: $color-accent;
     padding-top: 2rem;
   
     h1 {
@@ -19,15 +19,30 @@
     h2 {
       font-size: 1.5rem;
       font-weight: 100;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-links {
+    padding-top: 1rem;
+
+    a {
+      @include navigation-links;
+
+      &:first-child {
+        margin-right: var(--spacing);
+      }
     }
   }
 }
 
 @media screen and (min-width: $tablet) {
+  main.main-dark > nav {
+    display: none;
+  }
+
   .hero {
     flex-direction: row;
-    justify-content: center;
-    padding-bottom: 10vh;
 
     &-title {
       padding: 0 0 0 2rem;

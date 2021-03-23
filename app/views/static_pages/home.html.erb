@@ -1,4 +1,5 @@
 <main class="main-dark">
+  <%= render "layouts/header" %>
   <div class="content hero">
     <div class="hero-image">
       <%= image_tag('rlm_logo.png') %>
@@ -7,6 +8,11 @@
     <div class="hero-title">
       <h1>Rachel Moser</h1>
       <h2>Ruby on Rails Developer</h2>
+      <div class="hero-links">
+          <%= link_to 'Projects', static_page_path('projects') %>
+          <%= link_to 'About', static_page_path('about') %>
+      </div>
     </div>
+
   </div>
 </main>
