@@ -45,11 +45,18 @@
 
 @media screen and (min-width: $laptop) {
   .about {
+    width: 100%;
+
     &-container {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       > * {flex: 0 1 auto;}
+    }
+
+    &-content {
+      max-width: 850px;
     }
 
     &-images {
@@ -59,7 +66,7 @@
 
       img {
         margin: 0 1rem;
-        width: 15vw;
+        width: 18vw;
       }
     }
   }
@@ -67,8 +74,14 @@
 
 @media screen and (min-width: $desktop) {
   .about {
+    &-content {
+      max-width: 900px;
+    }
+
     &-images {
-      padding-left: calc(var(--spacing) * 3);
+      img {
+        max-width: 325px;
+      }
     }
   }
 }
@@ -80,6 +93,10 @@
         font-size: 2.75rem;
         padding-bottom: 2rem;
       }
+    }
+
+    &-content {
+      max-width: 1200px;
     }
 
     &-images {
