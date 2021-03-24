@@ -5,7 +5,7 @@ footer {
   .footer-container {
     flex: 0 0 content;
     margin: 0 auto;
-    max-width: $content-max;
+    max-width: var(--content-max);
     padding: 0 var(--spacing);
   }
 
@@ -15,7 +15,6 @@ footer {
     display: flex;
     height: 5rem;
     justify-content: space-between;
-    max-width: $content-max;
     
     > * { flex: 0 1 auto; }
 
@@ -71,6 +70,34 @@ footer {
 
     .icon-container {
       width: 350px;
+    }
+  }
+}
+
+@media screen and (min-width: $widescreen) {
+  footer {
+    height: 15rem;
+
+    .icon-container {
+      width: 600px;
+      height: 15rem;
+  
+      a {
+        .icon-circle {
+          height: 6rem;
+          width: 6rem;
+  
+          i {
+            font-size: 3rem;
+          }
+        }
+
+        .inverted {
+          i {
+            font-size: 6rem;
+          }
+        }
+      }
     }
   }
 }

@@ -19,13 +19,14 @@ $drop-shadow: 0 4px 14px $color-transparent-light;
 $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1440px;
-
-$content-max: 1600px;
+$widescreen: 1920px;
 
 :root {
-  --spacing: 2rem;
+  --content-max: 1660px;
   --menu-height: 3rem;
+  --navigation-font-size: 1.5rem;
   --paragraph-font-size: 1rem;
+  --spacing: 2rem;
 }
 
 @media screen and (min-width: $laptop) {
@@ -39,5 +40,15 @@ $content-max: 1600px;
 	:root {
     --spacing: 3rem;
     --paragraph-font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: $widescreen) {
+	:root {
+    --content-max: 2200px;
+    --menu-height: 8rem;
+    --navigation-font-size: 2.75rem;
+    --paragraph-font-size: 1.75rem;
+    --spacing: 4rem;
   }
 }

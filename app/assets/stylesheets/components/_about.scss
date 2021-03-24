@@ -72,3 +72,20 @@
     }
   }
 }
+
+@media screen and (min-width: $widescreen) {
+  .about {
+    &-container {
+      h3 {
+        font-size: 2.75rem;
+        padding-bottom: 2rem;
+      }
+    }
+
+    &-images {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}

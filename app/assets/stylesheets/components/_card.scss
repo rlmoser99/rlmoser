@@ -31,3 +31,12 @@
     }
   }
 }
+
+@media screen and (min-width: $widescreen) {
+  .card {
+    p.card-summary {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+}

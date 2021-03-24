@@ -3,7 +3,7 @@ nav {
 }
 
 .nav-container {
-  max-width: $content-max;
+  max-width: var(--content-max);
   padding: 0 var(--spacing);
 }
 
@@ -167,7 +167,7 @@ nav {
 
 .menu-wrap .menu > div > div > ul > li {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: var(--navigation-font-size);
   height: var(--menu-height);
   list-style: none;
   padding: 2rem 1rem;
@@ -245,3 +245,7 @@ nav {
     @include navigation-decoration;
   }
 }
+
+// @media screen and (min-width: $tablet) {
+
+// }

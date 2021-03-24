@@ -80,3 +80,21 @@
     }
   }
 }
+
+@media screen and (min-width: $widescreen) {
+  .hero {
+    &-image {
+      width: 400px;
+    }
+
+    &-title {
+      h1 {
+        font-size: 5rem;
+      }
+      
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
