@@ -58,7 +58,7 @@
       display: flex;
       margin: var(--spacing) 0;
       max-width: none;
-  
+
       > * { flex: 0 1 auto; }
     }
 
@@ -128,4 +128,14 @@
 .chess-img {
   background-image: url(asset_path("project-chess.png"));
   background-position: top left;
+}
+
+.odin-img {
+  background-image: url(asset_path("project-the-odin-project.png"));
+  background-position: top center;
+}
+
+.social-media-img {
+  background-image: url(asset_path("project-social-media.png"));
+  background-position: top center;
 }

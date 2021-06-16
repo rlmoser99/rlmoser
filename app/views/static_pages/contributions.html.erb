@@ -1,0 +1,92 @@
+<main>
+  <%= render "layouts/header" %>
+  <div class="content project">
+
+    <div class="project-container">
+      <div id="rspec-tutorial" class="project-img playground-img">
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Ruby RSpec Tutorial</h3>
+          <div class="btn-group">
+            <a href="https://www.theodinproject.com/courses/ruby-programming/lessons/testing-your-ruby-code#assignment-1" class="left-btn" target="_blank">Lesson</a>
+            <a href="https://github.com/rlmoser99/ruby_rspec_TOP" class="right-btn" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-description">
+          <p class="card-summary">
+            Wrote a unit testing tutorial to contribute to The Odin Project's curriculum.
+          </p>
+
+          <ul>
+            <li>Developed 16 lessons that cover the following: built-in matchers, the 'Arrange, Act & Assert' testing pattern, stubs, mocks, doubles, and test-driven development.</li>
+            <li>Prepared corresponding prompts for students to experience writing a wide variety of tests.</li>
+            <li>Invited other students to review and contribute before it was published in the curriculum.</li>
+            <li>Reduced student questions by 30% in the Ruby testing support channel on Discord as a result of integrating this tutorial into the curriculum.</li>
+          <ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-container project-reverse">
+      <div class="project-img odin-img">
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Other Significant Contributions</h3>
+        </div>
+        <div class="card-description">
+          <p class="card-summary">
+            Contributions to The Odin Project's curriculum and Ruby on Rails app.
+          </p>
+
+          <ul>
+            <li>
+              Wrote a lesson on
+              <strong>
+                <%= link_to "Nested Collections", "https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/nested-collections", target: "_blank" %>
+              </strong>
+              to help students understand their complexities.
+              <%= link_to "https://github.com/TheOdinProject/curriculum/pull/22214", title: "Source Code", target: "_blank", class: "icon-link" do %>
+                <i class="fas fa-code"></i>
+              <% end %>
+            </li>
+            <li>
+              Wrote an article,
+              <strong>
+                <%= link_to "How to Help Others Solve Coding Problems", "https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/join-the-odin-community#how-to-help-others-solve-coding-problems", target: "_blank" %>,
+              </strong>
+               to help our Discord community.
+              <%= link_to "https://github.com/TheOdinProject/curriculum/pull/22280", title: "Source Code", target: "_blank", class: "icon-link" do %>
+                <i class="fas fa-code"></i>
+              <% end %>
+            </li>
+            <li>
+              Created and refactored multiple
+              <strong>
+                test-driven development exercises
+              </strong>
+              to reinforce Ruby lessons.
+              <%= link_to "https://github.com/TheOdinProject/ruby-exercises/pulls?q=is%3Apr+author%3Arlmoser99+is%3Aclosed", title: "Source Code", target: "_blank", class: "icon-link" do %>
+                <i class="fas fa-code"></i>
+              <% end %>
+            </li>
+            <li>
+              Wrote
+              <strong>
+                system tests
+              </strong>
+               to increase our test coverage.
+              <%= link_to "https://github.com/TheOdinProject/theodinproject/pulls?q=is%3Apr+author%3Arlmoser99+is%3Aclosed+System+Tests", title: "Source Code", target: "_blank", class: "icon-link" do %>
+                <i class="fas fa-code"></i>
+              <% end %>
+            </li>
+          <ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

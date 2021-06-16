@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
     end
 
     def published_pages
-      %w[home projects about]
+      %w[home projects contributions about]
     end
 
     def published_page?(page)
